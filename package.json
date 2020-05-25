@@ -2,11 +2,15 @@
   "name": "components",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/js/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "build:css": "sass --watch src/scss/index.scss views/css/index.css",
+	"watch:css": "browser-sync start --server --files \"css/*.css\" \"*.html\" --serveStatic \"./\""
   },
-  "keywords": [],
+  "keywords": [
+    "scss",
+    "utitilities"
+  ],
   "author": "NuXBot",
   "license": "MIT",
   "devDependencies": {
